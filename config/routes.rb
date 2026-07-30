@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   put "/products/:id",      to: "products#update"
 
   delete "/products/:id",   to: "products#destroy"
+
+  post "/products/:product_id/subscribers", to: "subscribers#create", as: :product_subscribers
 end
